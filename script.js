@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 const step1 = document.getElementById('step1');
 const step2 = document.getElementById('step2');
 const step3 = document.getElementById('step3');
-const step4 = document.getElementById('step4');
 const step5 = document.getElementById('step5');
 
 const emailInput = document.getElementById('email');
@@ -20,12 +19,8 @@ const mathQuestionEl = document.getElementById('mathQuestion');
 const mathAnswerEl = document.getElementById('mathAnswer');
 const mathErrorEl = document.getElementById('mathError');
 
-const charChallengeEl = document.getElementById('charChallenge');
-const charAnswerEl = document.getElementById('charAnswer');
-const charErrorEl = document.getElementById('charError');
-
 let correctMathAnswer = 0;
-let correctCharCode = "";
+
 
 function checkEmailDomain() {
   const emailValue = emailInput.value.trim();
